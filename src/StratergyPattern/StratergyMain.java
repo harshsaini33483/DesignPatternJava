@@ -1,6 +1,6 @@
 package StratergyPattern;
 
-public class StratergyMain {
+public  class StratergyMain {
 	public static void main(String[] args) {
 		
 	    Transport transport1 = new Transport(Mode.Air, new HumanType(), 300);
