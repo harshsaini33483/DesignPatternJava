@@ -2,13 +2,13 @@ package ObserverPattern;
 
 import java.security.SecureRandom;
 
-public class LaborGrabber implements Labor {
+public class LaborGrabber implements Observer {
 
 	String laborName;
 	private int laborId;
-	private Work work;
+	private Subject work;
 
-	public LaborGrabber(String laborName, Work work) {
+	public LaborGrabber(String laborName, Subject work) {
 		this.work = work;
 		this.laborName = laborName;
 		laborId = new SecureRandom().nextInt();
